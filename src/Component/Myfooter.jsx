@@ -15,7 +15,6 @@ function Myfooter() {
        initial="hidden"
        whileInView={"show"}
        viewport={{once: false , amount: 0.7}}
-       
       className="w-full">
         <div className="grid w-full grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
           <div>
