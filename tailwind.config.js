@@ -1,19 +1,18 @@
 /* eslint-disable no-undef */
 
+const flowbite = require("flowbite-react/tailwind");
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
     './src/**/*.{js,jsx,ts,tsx}',  // Your source files
-    './node_modules/flowbite/**/*.js',  // Include Flowbite files
-    
-
+    flowbite.content(),
   ],
   theme: {
     extend: {},
   },
   plugins: [
-    require('flowbite/plugin'),
-    
+    flowbite.plugin(),
   ],
 };
