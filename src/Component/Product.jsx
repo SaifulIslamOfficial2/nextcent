@@ -58,7 +58,7 @@ function Product() {
          <div  className=" flex flex-col md:flex-row justify-between item-center gap-8">
                
             <motion.div
-             variants={fadeIn("left", 0.2)}
+             variants={fadeIn("up", 0.2)}
              initial="hidden"
              whileInView={"show"}
              viewport={{once: false , amount: 0.7}}
@@ -66,7 +66,7 @@ function Product() {
             className="md:w-1/3 items-center justify-center text-center "><img src={mas} alt="" /></motion.div>
         {/*  state */}
             <motion.div
-             variants={fadeIn("right", 0.2)}
+             variants={fadeIn("up", 0.2)}
              initial="hidden"
              whileInView={"show"}
              viewport={{once: false , amount: 0.7}}
@@ -79,8 +79,8 @@ function Product() {
                     <p className=" text-base mb-8">British Dragon Boat Racing Association</p>
                     <div>
                         <div className=" flex items-center gap-8 flex-wrap">
-                             <img src={Cmp} alt="" />
-                             <img src={Cmp2} alt="" />
+                            <img src={Cmp} alt="" />
+                            <img src={Cmp2} alt="" />
                             <img src={Cmp3} alt="" />
                             <img src={cmp4} alt="" />
                             <img src={cmp5} alt="" />

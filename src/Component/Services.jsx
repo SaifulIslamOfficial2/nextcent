@@ -6,9 +6,14 @@ import cmp4  from "../assets/icon/cmp4.png"
 import cmp5  from "../assets/icon/cmp5.png"
 import cmp6  from "../assets/icon/cmp6.png"
 import cmp7  from "../assets/icon/cmp7.png"
-
+// icon 
+import { FaLayerGroup } from "react-icons/fa";
+import { SiPiaggiogroup } from "react-icons/si";
+import { HiMiniRectangleGroup } from "react-icons/hi2";
+// motion
 import {motion} from 'framer-motion';
 import { fadeIn } from "./variants";
+import { IconBase } from "react-icons"
 
 
 
@@ -20,11 +25,11 @@ function Services() {
 
 
 let services = [
-    { id: 1, title : "Membership Organisations", description : "Our membership management software provides full automation of membership renewals and payments", image:"/src/assets/member1.png",
+    { id: 1, title : "Membership Organisations", description : "Our membership management software provides full automation of membership renewals and payments", IconBase:<FaLayerGroup />,
     },
-    { id: 2, title : "National Associations", description : "Our membership management software provides full automation of membership renewals and payments", image:"/src/assets/member2.png",
+    { id: 2, title : "National Associations", description : "Our membership management software provides full automation of membership renewals and payments", IconBase:<SiPiaggiogroup />,
     },
-    { id: 3, title : "Clubs And Groups", description : "Our membership management software provides full automation of membership renewals and payments", image:"/src/assets/member3.png",
+    { id: 3, title : "Clubs And Groups", description : "Our membership management software provides full automation of membership renewals and payments", IconBase:<HiMiniRectangleGroup />,
     },
 ]
 
@@ -60,7 +65,7 @@ let services = [
         {/* card title  */}
 
         <motion.div
-         variants={fadeIn("left", 0.2)}
+         variants={fadeIn("up", 0.2)}
          initial="hidden"
          whileInView={"show"}
          viewport={{once: false , amount: 0.7}}
@@ -73,7 +78,7 @@ let services = [
           <div className=" mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
                     {
                         services.map( services => <motion.div
-                            variants={fadeIn("right", 0.3)}
+                            variants={fadeIn("up", 0.3)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{once: false , amount: 0.7}}
@@ -81,7 +86,7 @@ let services = [
                                 <div className="">
                                     <div className=" px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:translate-y-5 hover:border-b-4  hover:border-green-500 transition-all duration-200 justify-center items-center h-full">
                                        <div className="bg-[#E8F5E9] mb-4 w-10 h-10 rounded-tl-3xl rounded-br-3xl mx-auto ">
-                                       <img  src={ services.image} alt="" className='-ml-2 w-7 h-7' />
+                                       <IconBase className=" text-2xl">{services.IconBase}</IconBase>
                                        </div>
                                         <h1 className=" text-2xl font-bold px-2 mb-2 text-slate-800">{ services.title}</h1>
                                         <p className=" text-sm text-gray-600">{ services.description}</p>

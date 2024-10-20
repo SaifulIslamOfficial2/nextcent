@@ -8,7 +8,7 @@ function NewsLetter() {
     <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto py-16 bg-[#F5F7FA] ">
         <div className="flex items-center justify-center lg:w-2/5 mx-auto">
                 <motion.div
-                 variants={fadeIn("left", 0.2)}
+                 variants={fadeIn("up", 0.2)}
                  initial="hidden"
                  whileInView={"show"}
                  viewport={{once: false , amount: 0.7}}

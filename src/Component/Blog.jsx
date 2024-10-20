@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FaArrowRightLong } from "react-icons/fa6";
-
+import blog1 from "../assets/blog1.jpg"
+import blog2 from "../assets/blog2.jpg"
+import blog3 from "../assets/blog3.jpg"
 // animation
 import {motion} from 'framer-motion';
 import { fadeIn } from "./variants";
@@ -9,9 +11,9 @@ function Blog() {
 
 
     let blogs = [
-        {id: 1, title: "Creating Streamlined Safeguarding Processes with OneRen", image: "/src/assets/blog1.jpg"},
-        {id: 2, title: "Creating Streamlined Safeguarding Processes with OneRen", image: "/src/assets/blog2.jpg"},
-        {id: 3, title: "Creating Streamlined Safeguarding Processes with OneRen", image: "/src/assets/blog3.jpg"},
+        {id: 1, title: "Creating Streamlined Safeguarding Processes with OneRen", image: blog1},
+        {id: 2, title: "Creating Streamlined Safeguarding Processes with OneRen", image: blog2},
+        {id: 3, title: "Creating Streamlined Safeguarding Processes with OneRen", image:blog3},
     ]
 
   return (

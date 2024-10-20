@@ -17,7 +17,7 @@ function Aboute() {
       <div className="md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center">
     {/* Image Section */}
     <motion.div
-     variants={fadeIn("right", 0.2)}
+     variants={fadeIn("up", 0.2)}
      initial="hidden"
      whileInView={"show"}
      viewport={{once: false , amount: 0.7}}
@@ -28,7 +28,7 @@ function Aboute() {
 
     {/* Text Content Section */}
     <motion.div
-     variants={fadeIn("left", 0.2)}
+     variants={fadeIn("up", 0.2)}
      initial="hidden"
      whileInView={"show"}
      viewport={{once: false , amount: 0.7}}
@@ -51,7 +51,7 @@ function Aboute() {
              <div  className=" flex flex-col md:flex-row justify-between item-center gap-4">
                    
                        <motion.div
-                        variants={fadeIn("right", 0.2)}
+                        variants={fadeIn("up", 0.2)}
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{once: false , amount: 0.7}}
@@ -65,7 +65,7 @@ function Aboute() {
                 {/* state  */}
                
                 <motion.div
-                 variants={fadeIn("left", 0.2)}
+                 variants={fadeIn("up", 0.2)}
                  initial="hidden"
                  whileInView={"show"}
                  viewport={{once: false , amount: 0.7}}
@@ -91,7 +91,7 @@ function Aboute() {
                 </motion.div>
 
                 <motion.div
-                 variants={fadeIn("left", 0.2)}
+                 variants={fadeIn("up", 0.2)}
                  initial="hidden"
                  whileInView={"show"}
                  viewport={{once: false , amount: 0.7}}
