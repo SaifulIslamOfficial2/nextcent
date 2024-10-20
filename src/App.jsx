@@ -7,7 +7,7 @@ import NewsLetter from './Component/NewsLetter'
 import Product from './Component/product'
 import Services from './Component/Services'
 import Myfooter from './Component/Myfooter'
-import { Modal } from 'flowbite-react'
+
 
 function App() {
  
@@ -21,7 +21,7 @@ function App() {
      <Blog />
      <NewsLetter />
      <Myfooter />
-    <Modal />
+    
      
     </>
   )

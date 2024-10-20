@@ -1,8 +1,8 @@
 import Button from "./Button"
 import product from "../assets/product.png"
-import cmp  from "../assets/icon/cmp1.png"
-import cmp2  from "../assets/icon/cmp2.png"
-import cmp3  from "../assets/icon/cmp3.png"
+import Cmp  from "../assets/icon/cmp1.png"
+import Cmp2  from "../assets/icon/cmp2.png"
+import Cmp3  from "../assets/icon/cmp3.png"
 import cmp4  from "../assets/icon/cmp4.png"
 import cmp5  from "../assets/icon/cmp5.png"
 import cmp6  from "../assets/icon/cmp6.png"
@@ -79,9 +79,9 @@ function Product() {
                     <p className=" text-base mb-8">British Dragon Boat Racing Association</p>
                     <div>
                         <div className=" flex items-center gap-8 flex-wrap">
-                             <img src={cmp} alt="" />
-                             <img src={cmp2} alt="" />
-                            <img src={cmp3} alt="" />
+                             <img src={Cmp} alt="" />
+                             <img src={Cmp2} alt="" />
+                            <img src={Cmp3} alt="" />
                             <img src={cmp4} alt="" />
                             <img src={cmp5} alt="" />
                             <img src={cmp6} alt="" />
