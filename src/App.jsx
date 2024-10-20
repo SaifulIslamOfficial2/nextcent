@@ -4,7 +4,7 @@ import Blog from './Component/Blog'
 import Home from './Component/Home'
 import Navbar from './Component/Navbar'
 import NewsLetter from './Component/NewsLetter'
-import Product from './Component/product'
+import Product from './Component/Product'
 import Services from './Component/Services'
 import Myfooter from './Component/Myfooter'
 
